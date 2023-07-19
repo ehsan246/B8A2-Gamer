@@ -39,18 +39,18 @@ nav{
     justify-content: space-between;
 }
 
-.icon{
+.main-icon{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.icon > h1{
+.main-icon > h1{
     font-weight: 700;
     font-size: 45px;
     padding-left: 10px;
 }
-.icon > h1 > span{
+.main-icon > h1 > span{
     color: var(--primary-color);
 }
 
@@ -161,11 +161,11 @@ button{
     text-align: center;
 }
 
-.online-games-title h1{
+.online-games-title h1, .play-inst-title h1{
     font-size: 48px;
     font-weight: 700;
 }
-.online-games-title h1 span{
+.online-games-title h1 span, .play-inst-title h1 span{
     background: -webkit-linear-gradient(#F948B2, #8758F1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -241,8 +241,97 @@ button{
   }
 
 
+/************* PLAY inst *************/
+
+.play-inst{
+    display: flex;
+    width: 1024px;
+    margin: 50px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.play-inst-title{
+    width: 350px;
+    text-align: right;
+   
+}
+
+.play-inst-img{
+    width: 350px;
+    margin-top: 20px;
+}
+
+
+/************* btn section *************/
+
+.btn-section-area{
+    width: 1024px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+.btn-section-area img{
+    margin-right: 5px;
+}
+.btn-item {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 20px 0;
+    color: #0B0223;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgba(11, 2, 35, 0.0);
+}
+
+.btn-item:hover{
+    border: 1px solid var(--primary-color);
+    border-radius: 35px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+
+
 /************* Footer *************/
 
+footer{
+    width: 100%;
+    background-color: #0B0223;
+
+}
+.footer-content{
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 800px;
+}
+.footer-content h1{
+    color: #fff;
+}
+
+.page-link-list ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.page-link-list a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.link-list-icon ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.link-list-icon a{
+    font-size: 30px;
+    margin:0 50px;
+}
 
 
 
@@ -274,8 +363,36 @@ button{
     .online-games-cards{
         flex-direction: column;
     }
+    .online-games-title h1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .play-inst{
+        width: 100%;
+        flex-direction: column;
+    }
+    .play-inst-title{
+        text-align: center;
+    }
+    .btn-section-area{
+        width: 100%;
+    }
+    .btn-section-area a {
+        width: 140px;
+        font-size: 12px;
+    }
+    .btn-section-area a img{
+        width: 30px;
+    }
+
 
 }
+
+
+
+
+
+
 
 
 
@@ -297,6 +414,11 @@ button{
     }
     .online-games-cards{
         flex-direction: column;
+    }
+
+    .btn-item {
+        width: 80%;
+  
     }
     
 }
