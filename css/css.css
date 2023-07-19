@@ -256,10 +256,32 @@ button{
    
 }
 
+
+.image-on-top{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
 .play-inst-img{
     width: 350px;
     margin-top: 20px;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
 }
+
+.play-inst-img-small {
+    width: 150px;
+    position: absolute;
+    top: 250px;
+    left: -40px;
+    /* border: 3px solid #fff; */
+  }
+
+
 
 
 /************* btn section *************/
@@ -317,6 +339,7 @@ footer{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .page-link-list a{
     color: #fff;
@@ -401,7 +424,22 @@ footer{
     .btn-section-area a img{
         width: 30px;
     }
-
+    .footer-content{
+        width: 100%;
+    }
+    .page-link-list ul{
+        justify-content: center;
+    }
+    .page-link-list li{
+        padding: 7px 16px;
+    }
+    .link-list-terms ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .link-list-terms li{
+        padding: 5px 20px;
+    }
 
 }
 
@@ -437,7 +475,39 @@ footer{
         width: 80%;
   
     }
-    
+    .footer-content{
+        width: 100%;
+    }
+    .page-link-list ul{
+        justify-content: center;
+    }
+    .page-link-list li{
+        padding: 7px 16px;
+    }
+    .link-list-terms ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .link-list-terms li{
+        padding: 5px 20px;
+    }
+    .btn-section-area{
+        width: 100%;
+    }
+    .btn-section-area a {
+        width: 140px;
+        font-size: 12px;
+    }
+    .btn-section-area a img{
+        width: 30px;
+    }
+    .play-inst{
+        width: 100%;
+        flex-direction: column;
+    }
+    .play-inst-title{
+        text-align: center;
+    }
 }
 
 
