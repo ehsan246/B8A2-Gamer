@@ -1,29 +1,17 @@
-
-
 :root{
     --text-color: #3C354F;
     --primary-color: #FF42A5;
+    /* body { background-color: var(--text-color); } */
 }
 *{
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
-}
-
-/* body { background-color: var(--text-color); } */
-
-/************* Common *************/
-main, nav, footer{
-    width: 100%;
-}
-
-
-nav .icon, .nav, .menu, .menu ul, .social-icon, footer, .footer-content, .footer-content .icon{
-    display: flex;
-}
-nav .icon, .menu, .social-icon, .footer-content .icon{
-    justify-items: center;
-    align-items: center;
+    /* regular = 400 */
+    /* medium = 500 */
+    /* SemiBOld = 600 */
+    /* BOld = 700 */
+    /* extraBOld = 800 */
 }
 
 ul{
@@ -35,48 +23,67 @@ a, p{
     color: var(--text-color);
 }
 
-
 /************* Nav bar *************/
 
 nav{
-    box-shadow: 0 0 15px grey;
+    display: flex;
+    /* width: 100%; */
     padding-top: 36px;
     padding-bottom: 36px;
+    justify-content: center;
+    box-shadow: 0 2px 8px #888888;
 }
-
-
 .nav{
-    max-width: 1024px;
-    margin: 0 auto;
+    width: 1024px;
+    display: flex;
     justify-content: space-between;
 }
-.icon h1{
-    margin-left: 12px;
-    font-weight: 900;
-    font-size: 45px;
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.icon span{
+
+.icon > h1{
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 10px;
+}
+.icon > h1 > span{
     color: var(--primary-color);
 }
 
-
+.menu{
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
 .menu ul li{
-    margin-right: 12px;
+    padding: 0 12px;
 }
 
 .social-icon{
+    align-items: center;
+    display: flex;
+    padding: 12px;
     background-color: rgba(11, 2, 35, 0.1);
-    padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 .social-icon > *{
-    margin-left: 16px;
+    padding: 0 6px;
 }
 
+
 /************* Main Header *************/
-main > section{
-    width: 80%;
-}
+
 
 .text-wrapper{
     width: 400px;
@@ -184,31 +191,39 @@ footer {
     /* For mobile phones: */
 @media only screen and (max-width: 425px) {
 
-    .nav, .menu{
+    .nav{
+        /* width: 100%; */
         flex-direction: column;
-        align-items: center;
     }
-    .menu > *{
-        margin-top: 16px;
+    .menu{
+        flex-direction: column;
+        margin-top: 30px;
     }
-  }
+    .menu > ul{
+        flex-direction: column;
+    }
+    .menu > ul> li{
+        padding-bottom: 20px;
+    }
+
+}
 
 
 
     /* For Tablet: */
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .nav{
+        width: 100%;
         justify-content: space-around;
     }
+
     .menu{
         flex-direction: column;
-        align-items: center;
     }
-    .menu ul{
-        margin-bottom: 12px;
+    .menu > ul{
+        padding-bottom: 20px;
     }
-
-  }
+}
 
 
 
