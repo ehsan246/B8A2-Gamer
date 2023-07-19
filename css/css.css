@@ -73,6 +73,67 @@ nav{
     margin-left: 16px;
 }
 
+/************* Main Header *************/
+main > section{
+    width: 80%;
+}
+
+.text-wrapper{
+    width: 400px;
+}
+
+.header-text h2{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.header-text h1{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 95px;
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+}
+
+.text-wrapper p{
+    color: #534C64;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.btn-section{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 21px 40px;
+    border-radius: 48px;
+    background-color: #4EC5F7;
+    border: 0;
+    cursor: pointer;
+}
+
+.primary-btn{
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
 /************* Footer *************/
 
 footer {
