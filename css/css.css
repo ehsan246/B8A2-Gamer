@@ -83,8 +83,16 @@ nav{
 
 
 /************* Main Header *************/
-
-
+.main-banner{
+    max-width: 1024px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-img >img {
+    width: 400px;
+}
 .text-wrapper{
     width: 400px;
 }
@@ -135,61 +143,111 @@ button{
 
 
 
+/************* Online Games *************/
+
+.online-games-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.online-games-title{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    align-items: center;
+    text-align: center;
+}
+
+.online-games-title h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.online-games-title h1 span{
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
 
 
 
 
+
+.online-games-cards{
+    display: flex;
+    margin-top: 30px;
+    gap: 8px;
+
+}
+
+.online-games-card{
+    width: 250px;
+    margin-bottom: 16px;
+}
+
+
+.container {
+    position: relative;
+    width: 250px;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    display: block;
+    width: 250px;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 10px);
+    width: 240px;
+    opacity: 0;
+    border-radius: 15px;
+    transition: .2s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 5px solid var(--primary-color);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .icon > .watch-now{
+    font-size: 34px;
+  }
+  .fa-user:hover {
+    color: #eee;
+  }
 
 
 /************* Footer *************/
 
-footer {
-    background-color: #0B0223;
-    padding: 50px 0;
-    box-sizing: border-box;
-    justify-content: center;
-}
-.footer-content{
-    width: 800px;
-    flex-direction: column;
-    align-items: center;
-    
 
-}
-
-.footer-content h1{
-    color:#fff;
-}
-
-
-.link-list a{
-    text-decoration: none;
-    color: #fff;
-}
-.link-list ul{
-    width: 100%;
-    display: flex;
-}
-.link-list ul li{
-    padding: 16px 18px;
-    font-weight: 600;
-}
-
-.link-list .white-icon{
-    font-size: 32px;
-}
-
-.tearm a{
-    font-weight: normal;
-    color: var(--text-color);
-}
-.footer-content >p{
-    margin-top: 16px;
-}
 
 
     /* For mobile phones: */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
 
     .nav{
         /* width: 100%; */
@@ -206,12 +264,23 @@ footer {
         padding-bottom: 20px;
     }
 
+    .main-banner{
+        flex-direction: column;
+    }
+
+    .online-games-title{
+        width: 400px;
+    }
+    .online-games-cards{
+        flex-direction: column;
+    }
+
 }
 
 
 
     /* For Tablet: */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
     .nav{
         width: 100%;
         justify-content: space-around;
@@ -223,6 +292,13 @@ footer {
     .menu > ul{
         padding-bottom: 20px;
     }
+    .main-banner{
+        flex-direction: column;
+    }
+    .online-games-cards{
+        flex-direction: column;
+    }
+    
 }
 
 
